@@ -1,70 +1,93 @@
-# Getting Started with Create React App
+# **Assignment Title: Building a Dynamic Web Application with React**
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Introduction:
 
-## Available Scripts
+This exercise is designed to enhance your understanding of React and its core concepts, including components, JSX, props, conditional rendering, and more. By the end of this exercise, you will have built a small, dynamic web application that demonstrates these concepts in action.
 
-In the project directory, you can run:
+### Setup:
 
-### `npm start`
+- Fork the starter code repository from GitHub Classroom link (provide a specific link).
+- Ensure you have Node.js and npm installed on your system.
+- Clone your forked repository, and run **`npm install`** to install dependencies.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Tasks:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### **Task 1: Understanding Components**
 
-### `npm test`
+- **Objective**: Create a functional component named **`Header`** that displays a page header.
+- **Requirements**:
+  - Use a functional component.
+  - The component should return a **`<header>`** HTML element containing an **`<h1>`** tag.
+  - The **`<h1>`** tag should display "Welcome to My React App".
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### **Task 2: Importing and Exporting Components**
 
-### `npm run build`
+- **Objective**: Learn how to export the **`Header`** component and import it into the main **`App`** component.
+- **Requirements**:
+  - Export the **`Header`** component from its file.
+  - Import the **`Header`** component in **`App.js`**.
+  - Render the **`Header`** component inside the **`App`** component's return statement.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### **Task 3: Writing Markup with JSX**
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **Objective**: Create a **`Footer`** component using JSX that includes your name and the current year.
+- **Requirements**:
+  - The component should return a footer tag containing a paragraph **`<p>`** that says "© [Your Name] [Current Year]".
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### **Task 4: JS in JSX with Curly Braces**
 
-### `npm run eject`
+- **Objective**: Dynamically display the current year in the **`Footer`** component using JavaScript within JSX.
+- **Requirements**:
+  - Use **`new Date().getFullYear()`** to get the current year.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### **Task 5: Props**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- **Objective**: Modify the **`Header`** component to accept a title prop and display it.
+- **Requirements**:
+  - The **`Header`** component should accept a **`title`** prop.
+  - Render the **`title`** prop value inside the **`<h1>`** tag.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### **Task 6: Conditional Rendering**
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- **Objective**: Implement conditional rendering in the **`App`** component to display a message if a list is empty.
+- **Requirements**:
+  - Create a state that holds an array of items (e.g., **`const [items, setItems] = useState([]);`**).
+  - Use conditional rendering to display "No items available" if the array is empty.
 
-## Learn More
+### **Task 7: Rendering Lists**
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- **Objective**: Render a list of items dynamically in the **`App`** component.
+- **Requirements**:
+  - Map over the **`items`** state to display each item in an unordered list.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### **Task 8: Keeping Components Pure**
 
-### Code Splitting
+- **Objective**: Ensure the **`Header`** component remains pure by passing props.
+- **Requirements**:
+  - Do not use state or side effects in the **`Header`** component.
+  - Pass all necessary data as props from the parent **`App`** component.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### **Task 9: Routing**
 
-### Analyzing the Bundle Size
+- **Objective**: Implement routing to navigate between different pages/components in your application.
+- **Requirements**:
+  - Use **`react-router-dom`** to set up routes for at least two components.
+  - Create navigation links to switch between routes.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### **Task 10: Understanding the UI Tree**
 
-### Making a Progressive Web App
+- **Objective**: Sketch or diagram the UI component tree of your application.
+- **Requirements**:
+  - Identify the hierarchy and structure of components in your application.
+  - Submit a simple sketch or diagram representing the component tree.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### Submission:
 
-### Advanced Configuration
+- Commit and push your changes to your forked repository.
+- Submit the link to your repository on GitHub Classroom.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### Evaluation Criteria:
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Adherence to task requirements.
+- Clean and readable code.
+- Proper use of React concepts and best practices.
